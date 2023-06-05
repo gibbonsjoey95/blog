@@ -1,4 +1,6 @@
 class Article < ApplicationRecord
+  includes Visible
+
   has_many :comments
   
   validates :title, presence: true
